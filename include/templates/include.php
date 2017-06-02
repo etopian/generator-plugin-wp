@@ -28,7 +28,7 @@ class <%= classname %> {
 	 *
 	 * @param  <%= mainclassname %> $plugin Main plugin object.
 	 */
-	public function __construct( $plugin ) {
+	public function __construct( $plugin = <%= mainclassname %>::get_instance() ) {
 		$this->plugin = $plugin;
 		$this->hooks();
 	}
